@@ -4,6 +4,8 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 from . import views
 
+'''URL patterns for the news application.'''
+
 urlpatterns = [
     path("", views.article_list, name="article_list"),
     path("dashboard/", views.dashboard, name="dashboard"),
